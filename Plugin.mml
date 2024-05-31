@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<marathon>
+  <opengl>
+    <shader name="wall" vert="resources/wall.vert" frag="resources/wall.frag"/>
+    <shader name="bump" vert="resources/wall.vert" frag="resources/wall.frag"/>
+    <shader name="landscape" vert="resources/wall.vert" frag="resources/wall.frag"/>
+    
+    <shader name="bloom" passes="0"/>
+  </opengl>
+</marathon>

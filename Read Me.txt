@@ -1,0 +1,38 @@
+Model Debugger 1.0.1
+--------------------
+by Hopper
+
+----------------------------------------------------------------
+DESCRIPTION:
+Model Debugger helps you test whether the normals on your 3D models are set up correctly for Aleph One. If the normals are not right, the lighting on your models will look strange.
+
+All walls and 3D models will be colored based on their direction relative to the camera. For example, surfaces facing the camera will be blue, surfaces facing up will be green, and surfaces facing toward the right will be red. If your model normals are wrong, the models will not blend in with the surrounding walls. If this is the case, you need to fix your <model> MML:
+
+- Use <model type="obj"> instead of <model type="wave"> -- the "wave" loader is buggy. You will probably need to reorient your models after this change.
+
+- Try different values for norm_type. A type of 3 or 4 may help if normals were wrong or missing in the model.
+
+----------------------------------------------------------------
+INSTALLATION:
+- Drag the downloaded .zip file, or the unzipped "Model Debugger" folder, into the "Plugins" folder inside your scenario folder. (Create a "Plugins" folder if you don't already have one.)
+- Launch Aleph One, and go to "Preferences", then "Environment", then "Plugins" make sure the plugin is listed as "Enabled". You can click on it to turn it on or off.
+- Go to "Preferences", then "Graphics", and make sure the renderer is listed as "OpenGL (Shader)". The plugin will have no effect in the Software or Classic renderers.
+
+----------------------------------------------------------------
+CHANGELOG:
+
+v1.0.1:
+* Updated documentation only.
+
+v1.0:
+* First release on Simplici7y; updated for Aleph One 1.0
+
+----------------------------------------------------------------
+SPECIAL THANKS:
+hogdotmac - For the original Shader renderer
+Glen Ditchfield - For bug fixes and modeling expertise
+
+----------------------------------------------------------------
+CONTACT:
+If you have any questions, comments, or bugs to report, you can email me:
+- Hopper@whpress.com
